@@ -7,7 +7,7 @@
 This project demonstrates how **Isolation Forest** can be used for anomaly detection.
 
 
-Isolation Forest is an unsupervised machine learning algorithm that identifies unusual data points by isolating them from the rest of the observations.
+Isolation Forest is an **unsupervised machine learning algorithm** that identifies unusual data points by isolating them from the rest of the observations.
 
 
 ---
@@ -40,13 +40,13 @@ The dataset contains healthcare-related information such as Age, Gender, Medical
 
 🧠 How Isolation Forest Works
 
-Isolation Forest works on a simple idea:
+Isolation Forest is based on a simple idea:
 
 Anomalies are easier to isolate than normal observations.
 
-The algorithm randomly selects features and split values to isolate observations.
+The algorithm randomly selects features and split values to isolate data points.
 
-Predictions are represented as:
+The predictions are:
 
  1  → Normal
 -1  → Anomaly
