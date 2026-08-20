@@ -1,39 +1,74 @@
-# 🔍 Anomaly Detection using DBSCAN and Isolation Forest
+🔍 Anomaly Detection using DBSCAN and Isolation Forest
+📌 Overview
 
-## 📌 Overview
+This project explores anomaly detection using unsupervised machine learning.
 
-Anomaly detection is the process of finding data points that are very different from the majority of the data.
+Two different algorithms are implemented using a healthcare dataset:
 
-For example, in a healthcare dataset, most patients may have similar ranges of billing amounts, age, or other numerical values. A few records may be unusually high or low. These unusual observations can be considered potential anomalies.
+🔵 DBSCAN
+🟢 Isolation Forest
 
-In this project, two different **unsupervised machine learning algorithms** are used to detect anomalies:
+The goal is to identify unusual observations and understand how different algorithms approach anomaly detection.
 
-1. **DBSCAN (Density-Based Spatial Clustering of Applications with Noise)**
-2. **Isolation Forest**
+🎯 Objectives
+Explore and preprocess the healthcare dataset
+Apply DBSCAN for anomaly detection
+Apply Isolation Forest for anomaly detection
+Identify potential anomalies
+Visualize and analyze the results
+📊 Dataset
 
-Both methods are applied to a healthcare dataset and their approaches to anomaly detection are explored.
+The project uses healthcare_dataset.csv.
 
----
+The dataset contains healthcare-related information such as Age, Gender, Medical Condition, Billing Amount, and Medical Test Results.
 
-## 🎯 Objectives
+🧠 Algorithms Used
+🔵 DBSCAN
 
-The main objectives of this project are:
+DBSCAN groups data points based on their density. Points that do not belong to a dense group are classified as noise and can be considered potential anomalies.
 
-- Understand the concept of anomaly detection
-- Explore and understand the healthcare dataset
-- Perform data preprocessing
-- Select useful features for anomaly detection
-- Apply DBSCAN for detecting unusual observations
-- Apply Isolation Forest for detecting anomalies
-- Visualize the results
-- Understand the difference between the two algorithms
-- Gain practical experience with unsupervised machine learning
+View DBSCAN Implementation
 
----
+🟢 Isolation Forest
 
-## 📊 Dataset
+Isolation Forest identifies unusual observations by isolating them from the rest of the data. Anomalies are generally easier to isolate than normal observations.
 
-The project uses a healthcare dataset stored in:
+View Isolation Forest Implementation
 
-```text
-healthcare_dataset.csv
+🔄 Workflow
+
+Dataset → Data Preprocessing → Feature Selection → Apply Algorithms → Detect Anomalies → Visualization & Analysis
+
+🛠️ Technologies Used
+Python
+Pandas
+NumPy
+Matplotlib
+Scikit-learn
+Jupyter Notebook
+📁 Project Structure
+
+Anomaly_Detection/
+├── README.md
+├── DBSCAN_Anomaly_Detection/
+│ ├── DBSCAN_Anomaly_Detection.ipynb
+│ └── README.md
+├── Isolation_Forest_Anomaly_Detection/
+│ ├── Isolation_Forest_Anomaly_Detection.ipynb
+│ └── README.md
+└── healthcare_dataset.csv
+
+📚 Key Learning
+
+This project provides practical experience with:
+
+Unsupervised Machine Learning
+Anomaly Detection
+DBSCAN
+Isolation Forest
+Data Preprocessing
+Feature Selection
+Data Visualization
+👩‍💻 Author
+
+Aakriti Kandpal
